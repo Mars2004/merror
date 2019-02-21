@@ -3,7 +3,12 @@
 #include "../msvexception.h"
 
 #include "MsvErrorTestConstants.h"
+
+MSV_DISABLE_ALL_WARNINGS
+
 #include <regex>
+
+MSV_ENABLE_WARNINGS
 
 
 TEST(MsvExceptionTest, ItShouldCreateValidException)

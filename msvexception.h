@@ -38,11 +38,15 @@ along with Foobar. If not, see <https://www.gnu.org/licenses/>.
 #define MARSTECH_EXCEPTION_H
 
 
-#include "msverror.h"
+#include "MsvError.h"
+
+MSV_DISABLE_ALL_WARNINGS
 
 #include <exception>
 #include <chrono>
 #include <sstream>
+
+MSV_ENABLE_WARNINGS
 
 
 /**************************************************************************************************//**

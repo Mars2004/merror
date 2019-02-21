@@ -38,7 +38,12 @@ along with Foobar. If not, see <https://www.gnu.org/licenses/>.
 #define MARSTECH_ERROR_CODES_H
 
 
-#include "msverror.h"
+#include "MsvError.h"
+
+
+/********************************************************************************************************************************
+*															Success error codes
+********************************************************************************************************************************/
 
 
 /**************************************************************************************************//**
@@ -46,7 +51,41 @@ along with Foobar. If not, see <https://www.gnu.org/licenses/>.
 * @details		Main success errorcode without any added information.
 * @see			MsvErrorCode
 ******************************************************************************************************/
-MsvErrorCode const MSV_SUCCESS = 0x00000000;
+MsvErrorCode const MSV_SUCCESS							= 0x00000000;
+
+
+/********************************************************************************************************************************
+*															Info error codes
+********************************************************************************************************************************/
+
+
+MsvErrorCode const MSV_ALREADY_INITIALIZED_INFO		= 0x40000000;
+MsvErrorCode const MSV_NOT_INITIALIZED_INFO			= 0x40000001;
+MsvErrorCode const MSV_ALREADY_RUNNING_INFO			= 0x40000002;
+MsvErrorCode const MSV_NOT_RUNNING_INFO				= 0x40000003;
+MsvErrorCode const MSV_ALREADY_REQUESTED_INFO		= 0x40000004;
+MsvErrorCode const MSV_ALREADY_REGISTERED_INFO		= 0x40000005;
+MsvErrorCode const MSV_NOT_REGISTERED_INFO			= 0xC0000006;
+MsvErrorCode const MSV_ALREADY_SET_INFO				= 0xC0000007;
+MsvErrorCode const MSV_NOT_SET_INFO						= 0xC0000008;
+
+
+/********************************************************************************************************************************
+*															Warning error codes
+********************************************************************************************************************************/
+
+
+MsvErrorCode const MSV_STILL_RUNNING_WARN				= 0x80000000;
+
+
+/********************************************************************************************************************************
+*															Error error codes
+********************************************************************************************************************************/
+
+
+MsvErrorCode const MSV_ALLOCATION_ERROR				= 0xC0000000;
+MsvErrorCode const MSV_NOT_INITIALIZED_ERROR			= 0xC0000001;
+MsvErrorCode const MSV_NOT_REQUESTED_ERROR			= 0xC0000002;
 
 
 #endif // !MARSTECH_ERROR_CODES_H

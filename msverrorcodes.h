@@ -65,9 +65,12 @@ MsvErrorCode const MSV_ALREADY_RUNNING_INFO			= 0x40000002;
 MsvErrorCode const MSV_NOT_RUNNING_INFO				= 0x40000003;
 MsvErrorCode const MSV_ALREADY_REQUESTED_INFO		= 0x40000004;
 MsvErrorCode const MSV_ALREADY_REGISTERED_INFO		= 0x40000005;
-MsvErrorCode const MSV_NOT_REGISTERED_INFO			= 0xC0000006;
-MsvErrorCode const MSV_ALREADY_SET_INFO				= 0xC0000007;
-MsvErrorCode const MSV_NOT_SET_INFO						= 0xC0000008;
+MsvErrorCode const MSV_NOT_REGISTERED_INFO			= 0x40000006;
+MsvErrorCode const MSV_ALREADY_SET_INFO				= 0x40000007;
+MsvErrorCode const MSV_NOT_SET_INFO						= 0x40000008;
+MsvErrorCode const MSV_EXPIRED_INFO						= 0x40000009;
+MsvErrorCode const MSV_NOT_FOUND_INFO					= 0x4000000A;
+MsvErrorCode const MSV_ALREADY_EXISTS_INFO			= 0x4000000B;
 
 
 /********************************************************************************************************************************
@@ -86,6 +89,17 @@ MsvErrorCode const MSV_STILL_RUNNING_WARN				= 0x80000000;
 MsvErrorCode const MSV_ALLOCATION_ERROR				= 0xC0000000;
 MsvErrorCode const MSV_NOT_INITIALIZED_ERROR			= 0xC0000001;
 MsvErrorCode const MSV_NOT_REQUESTED_ERROR			= 0xC0000002;
+MsvErrorCode const MSV_NOT_FOUND_ERROR					= 0xC0000003;
+MsvErrorCode const MSV_DOES_NOT_EXIST_ERROR			= 0xC0000004;
+MsvErrorCode const MSV_ALREADY_EXISTS_ERROR			= 0xC0000005;
+MsvErrorCode const MSV_PARSE_ERROR						= 0xC0000006;
+MsvErrorCode const MSV_UNKNOWN_ERROR					= 0xC0000007;
+MsvErrorCode const MSV_INVALID_DATA_ERROR				= 0xC0000008;
+MsvErrorCode const MSV_OPEN_ERROR						= 0xC0000009;
+MsvErrorCode const MSV_CLOSE_ERROR						= 0xC000000A;
+MsvErrorCode const MSV_EXECUTE_ERROR					= 0xC000000B;
+MsvErrorCode const MSV_BUSY_ERROR						= 0xC000000C;
+MsvErrorCode const MSV_NOT_ALLOWED_ERROR				= 0xC000000D;
 
 
 #endif // !MARSTECH_ERROR_CODES_H

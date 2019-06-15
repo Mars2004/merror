@@ -1,5 +1,5 @@
 # MarsTech Error Handling
- - [Instalation](#instalation)
+ - [Installation](#installation)
 	 - [Configuration](#configuration)
  - [MsvErrorCode](#msverrorcode)
 	 - [Error Code Severities](#error-code-severities)
@@ -7,16 +7,22 @@
 	 - [Other Macros](#other-macros)
 	 - [MarsTech Error Codes](#marstech-error-codes)
  - [MsvException](#msvexception)
+ - [Usage Example](#usage-example)
  - [Source Code Documentation](#source-code-documentation)
  - [License](#license)
 
 MarsTech Error Handling (MERROR) is a C++ project to make error handling easier. It defines [errorcode type and a set of macros](#msverrorcode) to handle errors. Of course there is [MsvException class](#msvexception).
 
-## Instalation
+## Installation
 MERROR is header only project/library - there is no static or dynamic library. You can download repository and include header file msverror.h (or one of msverrorcodes.h and msvexception.h) to your project.
 
 ### Configuration
 No configuration is needed - just include MERROR header files to your project.
+
+## Usage Example
+There is also an [usage example](https://github.com/Mars2004/msys/Example) which uses the most of [MarsTech](https://github.com/Mars2004) projects and libraries.
+Its source codes and readme can be found at:
+ - [https://github.com/Mars2004/msys/Example](https://github.com/Mars2004/msys/Example)
 
 ## MsvErrorCode
 It is typedef which defines errorcode type. It is `int32_t` which is always 32 bit signed integer value.
@@ -139,6 +145,11 @@ catch (...)
 	//some other exception has been caught
 }
 ~~~
+
+## Usage Example
+There is also an [usage example](https://github.com/Mars2004/msys/tree/master/Example) which uses the most of [MarsTech](https://github.com/Mars2004) projects and libraries.
+Its source codes and readme can be found at:
+ - [https://github.com/Mars2004/msys/tree/master/Example](https://github.com/Mars2004/msys/tree/master/Example)
 
 ## Source Code Documentation
 You can find generated source code documentation at [https://www.marstech.cz/projects/merror/1.0.1/doc](https://www.marstech.cz/projects/merror/1.0.1/doc).
